@@ -17,7 +17,7 @@
       <p>Here is some filler text to make sure this is where I want the description</p>
     </div>
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-4">
         <div class="card">
           <form id="survey">
             <p>Do you already have a prefered language in mind?</p>
@@ -28,7 +28,7 @@
               <option value="3">C#</option>
               <option value="4">Ruby</option>
             </select>
-            <hr>
+            
             <p>How familiar are you with other programming languages?</p>
             <select class="form-control" id="question2" required>
               <option value="0"></option>
@@ -37,7 +37,7 @@
               <option value="4">Very familiar</option>
               <option value="1000">I know all the languages</option>
             </select>
-            <hr>
+            
             <p>Are you primarily interested in creating Web pages?</p>
             <select class="form-control" id="question3" required>
               <option value="0"></option>
@@ -45,7 +45,7 @@
               <option value="2">No sure yet</option>
               <option value="3">No way</option>
             </select>
-            <hr>
+            
             <p>Who is your favorite Avenger?</p>
             <select class="form-control" id="question4" required>
               <option value="0"></option>
@@ -56,7 +56,7 @@
               <option value="6">You don't have them here</option>
               <option value="7">I prefer DC</option>
             </select>
-            <hr>
+            
             <p>Would you like to answer this question?</p>
             <select class="form-control" id="question5" required>
               <option value="0"></option>
@@ -67,26 +67,25 @@
           </form>
         </div>
       </div>
-      <div class="col-md-3">
-        <div class="card">
-          <img src="img/Java.png" alt="Java logo">
-          <hr>
-          <p>JavaScript is a lightweight object-oriented language best known as the scripting language for Web pages, but it's used in many non-browser environments as well.</p>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card">
-          <img src="img/Csharp.png" alt="C# logo">
-          <hr>
-          <p>C# is a highly versatile, object-oriented programming language primarily used on the Windows .NET framework.</p>
-          <br>
-        </div>
-      </div>
-      <div class="col-md-3">
+      <div class="col-md-6">
+        <div id="languageResult">
+          <div id="java">
+            <img src="img/Java.png" alt="Java logo">
+            <hr>
+            <p>JavaScript is a lightweight object-oriented language best known as the scripting language for Web pages, but it's used in many non-browser environments as well.</p>
+          </div>
+          <div id="cSharp">
+            <img src="img/Csharp.png" alt="C# logo">
+            <hr>
+            <p>C# is a highly versatile, object-oriented programming language primarily used on the Windows .NET framework.</p>
+            <br>
+          </div>
+      
+      <!-- <div class="col-md-3">
         <div class="card">
           <img src="img/Ruby.jpg" alt="Ruby logo">
           <hr>
-          <p>Ruby blends other languages (Perl, Smalltalk, Eiffel, Ada, and Lisp) to form a new language that balances functional programming with imperative programming.</p>
+          <p>Ruby blends other languages (Perl, Smalltalk, Eiffel, Ada, and Lisp) to form a new language that balances functional programming with imperative programming.</p> -->
         </div>
       </div>
     </div>

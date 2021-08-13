@@ -14,9 +14,9 @@ $(document).ready(function() {
     let total = surveyTotal(val1, val2, val3, val4, val5);
     let result;
     if (total <= 8) {
-      result = ("less than 8");
+      $("#java").show();
     } else if (total > 8 && total <= 12) {
-      result = ("between 9 and 12");
+      $("#cSharp").show();
     } else {
       result = ("not ready yet");
     }
