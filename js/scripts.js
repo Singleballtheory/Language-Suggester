@@ -12,12 +12,14 @@ $(document).ready(function() {
     const val4 = parseInt($("#question4").val());
     const val5 = parseInt($("#question5").val());
     let total = surveyTotal(val1, val2, val3, val4, val5);
-    alert (total);
-
+    let result;
     if (total <= 8) {
-      alert ("less than 8");
+      result = ("less than 8");
     } else if (total > 8 && total <= 12) {
-      alert ("between 9 and 12");
-    } else alert ("not ready yet");
+      result = ("between 9 and 12");
+    } else {
+      result = ("not ready yet");
+    }
+    $("#output").text(result);
   });
 });
