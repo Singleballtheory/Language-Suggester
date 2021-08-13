@@ -13,13 +13,19 @@ $(document).ready(function() {
     const val5 = parseInt($("#question5").val());
     let total = surveyTotal(val1, val2, val3, val4, val5);
     let result;
-    if (total <= 8) {
+
+    if (total === 0) {
+      result = ("We can't help you if you don't make any selections.")
+    } else if (total <= 8) {
+      // $("#languageResult").clear();
       $("#java").show();
     } else if (total > 8 && total <= 12) {
+      // $("#languageResult").clear();
       $("#cSharp").show();
     } else {
       result = ("not ready yet");
     }
+    $("submitButton").hide();
     $("#output").text(result);
   });
 });
