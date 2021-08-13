@@ -11,6 +11,7 @@ $(document).ready(function() {
     const val3 = parseInt($("#question3").val());
     const val4 = parseInt($("#question4").val());
     const val5 = parseInt($("#question5").val());
-    let surveyTotal = add(val1 + val2 + val3 + val4 + val5);
+    result = surveyTotal(val1, val2, val3, val4, val5);
+    
   });
 });
