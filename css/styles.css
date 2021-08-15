@@ -1,3 +1,7 @@
 #java, #cSharp, #ruby {
   display: none;
 }
+
+#resetButton {
+  display: none;
+}

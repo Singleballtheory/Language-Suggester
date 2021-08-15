@@ -25,7 +25,9 @@ $(document).ready(function() {
     } else {
       result = ("not ready yet");
     }
-    $("submitButton").hide();
+    $("#submitButton").hide();
+    $("#resetButton").show();
+
     $("#output").text(result);
   });
 });
