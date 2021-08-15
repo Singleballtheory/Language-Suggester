@@ -11,44 +11,41 @@
   <div class="container">
     <div class="jumbotron">
       <h1>PROGRAMMING LANGUAGE SUGGESTER</h1>
-      <h3>A Buzzfeed-style quiz</h3>
-    </div>
-    <div>
-      <p>Here is some filler text to make sure this is where I want the description</p>
+      <p>Answer the questions in the column below and the site will offer a programming language that may be of interest to you. Don't like the result? Hit the "Change your selections" button and try again.</p><p>Already know the language you're interested in? Select it in question #1 and skip the survey!</p>
     </div>
     <div class="row">
       <div class="col-md-4">
         <div class="card">
           <form id="survey">
             <p>Do you already have a prefered language in mind?</p>
-            <select class="form-control" id="question1" required>
-              <option value="0"></option>
+            <select class="form" id="question1" required>
+              <option value="0">Make a selection</option>
               <option value="1">No preference</option>
               <option value="2">JavaScript</option>
               <option value="3">C#</option>
               <option value="4">Ruby</option>
             </select>
-            
+            <hr>
             <p>How familiar are you with other programming languages?</p>
-            <select class="form-control" id="question2" required>
-              <option value="0"></option>
+            <select class="form" id="question2" required>
+              <option value="0">Make a selection</option>
               <option value="2">Not familiar at all</option>
               <option value="3">Slightly familiar</option>
               <option value="4">Very familiar</option>
               <option value="1000">I know all the languages</option>
             </select>
-            
+            <hr>
             <p>Are you primarily interested in creating Web pages?</p>
-            <select class="form-control" id="question3" required>
-              <option value="0"></option>
+            <select class="form" id="question3" required>
+              <option value="0">Make a selection</option>
               <option value="1">Absolutely</option>
               <option value="2">No sure yet</option>
               <option value="3">No way</option>
             </select>
-            
+            <hr>
             <p>Who is your favorite Avenger?</p>
-            <select class="form-control" id="question4" required>
-              <option value="0"></option>
+            <select class="form" id="question4" required>
+              <option value="0">Make a selection</option>
               <option value="2">Captain America</option>
               <option value="3">Thor</option>
               <option value="4">Iron Man</option>
@@ -56,20 +53,25 @@
               <option value="6">You don't have them here</option>
               <option value="7">I prefer DC</option>
             </select>
-            
+            <hr>
             <p>Would you like to answer this question?</p>
-            <select class="form-control" id="question5" required>
-              <option value="0"></option>
+            <select class="form" id="question5" required>
+              <option value="0">Make a selection</option>
               <option value="1">I just did</option>
             </select>
-            <br>
+            <hr>
             <button id="submitButton" class="btn btn-success btn-block" type="submit">Find your language!</button>
             <button id="resetButton" class="btn btn-warning btn-block" type="button" onClick="window.location.reload();">Change your selections</button>
           </form>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-7">
         <div id="languageResult">
+          <div id="output">            
+          </div>
+          <div id="up">
+            <p>Why take a quiz if you already know what you want? Here's the info you asked for!</p>
+          </div>
           <div id="java">
             <img src="img/Java.png" alt="Java logo">
             <hr>
@@ -88,8 +90,6 @@
           </div>
         </div>
       </div>
-    </div>
-    <div id="output">
     </div>
   </div>
 </body>

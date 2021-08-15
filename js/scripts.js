@@ -15,19 +15,25 @@ $(document).ready(function() {
     let result;
 
     if (total === 0) {
-      result = ("We can't help you if you don't make any selections.")
-    } else if (total <= 8) {
-      // $("#languageResult").clear();
+      result = ("We can't help you if you don't make any selections.");
+    } else if (val1 === 2) {
+      $("#up, #java").show();
+    } else if (val1 === 3) {
+      $("#up, #cSharp").show();
+    } else if (val1 === 4) {
+      $("#up, #ruby").show();
+    } else if (total <= 7) {
       $("#java").show();
-    } else if (total > 8 && total <= 12) {
-      // $("#languageResult").clear();
+    } else if (total > 7 && total <= 13) {
       $("#cSharp").show();
-    } else {
-      result = ("not ready yet");
+    } else if (total > 13 && total <= 19) {
+      $("#ruby").show();
+    } else if (total > 999) {
+      result =("If you know every language, why are you here?");
     }
-    $("#submitButton").hide();
-    $("#resetButton").show();
 
+    $("#submitButton, .form").hide();
+    $("#resetButton").show();
     $("#output").text(result);
   });
 });
